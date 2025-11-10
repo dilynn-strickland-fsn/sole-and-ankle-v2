@@ -51,19 +51,34 @@ const ShoeCard = ({
 };
 
 const Link = styled.a`
+  display: flex;
+  flex-direction: column;
+  min-height: 370px;
   text-decoration: none;
   color: inherit;
+  max-width: 344px;
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  flex: 1;
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
+  height: 300px;
+  background-color: ${COLORS.gray[100]};
+  border: 1px transparent;
+  border-radius: 16px 16px 4px 4px;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 340px;
+  border-radius: 16px 16px;
+`;
 
 const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
   font-size: 1rem;
 `;
 
@@ -72,7 +87,9 @@ const Name = styled.h3`
   color: ${COLORS.gray[900]};
 `;
 
-const Price = styled.span``;
+const Price = styled.span`
+  color: ${COLORS.gray[700]};
+`;
 
 const ColorInfo = styled.p`
   color: ${COLORS.gray[700]};
