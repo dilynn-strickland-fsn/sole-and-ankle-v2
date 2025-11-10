@@ -49,11 +49,12 @@ const Wrapper = styled.div`
 `;
 
 const LeftColumn = styled.div`
-  flex: 1;
+  flex-basis: 248px;
+  gap: 32px;
 `;
 
 const MainColumn = styled.div`
-  flex: 5;
+  flex: 1;
 `;
 
 const Header = styled.header`
